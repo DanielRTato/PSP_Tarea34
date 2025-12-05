@@ -55,7 +55,7 @@ public class ComparadorURLs {
             } else {
                 System.out.println("Ambas URLs tienen el mismo tamaño de contenido.");
             }
-        } catch (IOException | InterruptedException e) {
+        } catch (IOException | InterruptedException | IllegalArgumentException e) {
             System.out.println("Error al acceder a las URLs: " + e.getMessage());
         }
     }
